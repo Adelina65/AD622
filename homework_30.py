@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 
 # Задача 1: Диаграмма рассеяния (Взаимосвязь чисел)
 # Условие: Покажите взаимосвязь между общим счетом
@@ -24,8 +23,7 @@ plt.show()
 # чтобы сравнить распределение общего счета (total_bill)
 # между курящими (smoker) и некурящими клиентами. На основе датасета tips.
 
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 tips = sns.load_dataset("tips")
 plt.figure(figsize=(10,6))
 sns.boxplot(data=tips, x="smoker", y="total_bill", palette="Set2")
